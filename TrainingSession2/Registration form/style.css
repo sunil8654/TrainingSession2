@@ -46,7 +46,6 @@ h1 {
 }
 
 label {
-    font-weight: bold;
     display: block;
     margin-bottom: 8px;
     margin-top: 10px;
@@ -66,16 +65,19 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     display: block;
+    font-weight: 300;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
     margin-right: 10px;
+
 }
 
 .gender, .hobbies {
     display: flex;
     justify-content: space-around;
+   
 }
 
 .gender div, .hobbies div {
@@ -83,7 +85,6 @@ input[type="checkbox"] {
 }
 
 .submit-btn {
-    width: 20%;
     padding: 10px;
     background-color: #020200;
     border: none;
@@ -100,5 +101,31 @@ input[type="checkbox"] {
 }
 form {
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
+}
+
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .img {
+       max-width: 15%;
+       
+    }
+    form {
+        margin: 0 auto;
+        width: 80%; }
+}
+
+@media (min-width: 50px) and (max-width: 500px) {
+    .img {
+        max-width: 0%;
+       
+    }
+    .container {
+        margin-left: 35px;
+
+    
+    }
+    form {
+        width: 100%;
+}
 }
