@@ -8,70 +8,71 @@
 </head>
 <body>
     <section>
-    <div class="img">
-    <img src="img.jpg" alt="">
-</div>
+        <div class="img">
+            <img src="img.jpg" alt="">
+        </div>
 
-    <div class="container">
-        <h1>Registration Form</h1>
-        <form action="#" method="post" enctype="multipart/form-data">
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
-            
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-            
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required>
-            
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required>
-            
-            <label>Gender</label>
-            <div class="gender">
-                <div><input type="radio" id="male" name="gender" value="male" required><label for="male">Male</label></div>
-                <div><input type="radio" id="female" name="gender" value="female"><label for="female">Female</label></div>
-                <div><input type="radio" id="other" name="gender" value="other"><label for="other">Other</label></div>
-            </div>
-            
-            <label>Hobbies</label>
-            <div class="hobbies">
-                <div><input type="checkbox" id="reading" name="hobbies" value="reading"><label for="reading">Reading</label></div>
-                <div><input type="checkbox" id="traveling" name="hobbies" value="traveling"><label for="traveling">Traveling</label></div>
-                <div><input type="checkbox" id="cooking" name="hobbies" value="cooking"><label for="cooking">Cooking</label></div>
-                <div><input type="checkbox" id="other-hobby" name="hobbies" value="other"><label for="other-hobby">Other</label></div>
-            </div>
-            
-            <label for="profile-picture">Profile Picture</label>
-            <input type="file" id="profile-picture" name="profile-picture" required>
-            
-            <label for="country">Country</label>
-            <select id="country" name="country" required>
-                <option value="">Select Country</option>
-                <option value="usa">United States</option>
-                <option value="canada">Canada</option>
-                <option value="uk">United Kingdom</option>
-                <option value="australia">Australia</option>
+        <div class="container">
+            <h1>Registration Form</h1>
+            <form id="registerForm" action="#" method="post" enctype="multipart/form-data">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
                 
-            </select>
-            
-            <label for="bio">Bio</label>
-            <textarea id="bio" name="bio" rows="4" required></textarea>
-            
-            <label><input type="checkbox" id="terms" name="terms" required> I agree to the Terms and Conditions</label>
-            
-            <button type="submit" class="submit-btn">Register</button>
-        </form>
-    </div>
-</section>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label>Gender</label>
+                <div class="gender">
+                    <div><input type="radio" id="male" name="gender" value="male" required><label for="male">Male</label></div>
+                    <div><input type="radio" id="female" name="gender" value="female"><label for="female">Female</label></div>
+                    <div><input type="radio" id="other" name="gender" value="other"><label for="other">Other</label></div>
+                </div>
+                
+                <label>Hobbies</label>
+                <div class="hobbies">
+                    <div><input type="checkbox" id="reading" name="hobbies" value="reading"><label for="reading">Reading</label></div>
+                    <div><input type="checkbox" id="traveling" name="hobbies" value="traveling"><label for="traveling">Traveling</label></div>
+                    <div><input type="checkbox" id="cooking" name="hobbies" value="cooking"><label for="cooking">Cooking</label></div>
+                    <div><input type="checkbox" id="other-hobby" name="hobbies" value="other"><label for="other-hobby">Other</label></div>
+                </div>
+                
+                <label for="profile-picture">Profile Picture</label>
+                <input type="file" id="profile-picture" name="profile-picture" required>
+                
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                </select>
+                
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="4" required></textarea>
+                
+                <label><input type="checkbox" id="terms" name="terms" required> I agree to the Terms and Conditions</label>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
